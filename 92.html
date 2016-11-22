@@ -1,0 +1,33 @@
+# Unit-9
+Assignments for Unit 9
+<html>  
+  <head>  
+  <meta charset="UTF-8">  
+  <script>
+  var bold_words;  
+window.onload = getBold_words();    
+function getBold_words()   
+{  
+  bold_words = document.getElementsByTagName('strong');   
+}  
+function highlight()   
+{  
+   for (var i=0; i<bold_words.length; i++)  
+   {                                                      
+    bold_words[i].style.color = "red";  
+    }  
+}  
+function return_normal()  
+{  
+  for (var i=0; i<bold_words.length; i++)   
+  {  
+       bold_words[i].style.color = "black";  
+  }  
+}  
+  </script>
+  </head>  
+  <body>   
+  <p>[<a href="#" onMouseOver="highlight()" onMouseOut="return_normal()"></a>]</p>   
+<p><strong>We</strong> have just started <strong>this</strong> section for the users (<strong>beginner</strong> to intermediate) who want to work with <strong>various</strong> JavaScript <strong>problems</strong> and write scripts online to <strong>test</strong> their JavaScript <strong>skill</strong>.</p>  
+  </body>  
+  </html>  
